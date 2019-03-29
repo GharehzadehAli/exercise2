@@ -1,13 +1,15 @@
 package com.company;
 
-public class Book {
-    private String title;
-    private double price;
-    public Book(){
+abstract public class Book {
+    protected   String title;
+    protected   double price;
+
+    public Book() {
 
     }
-    public Book(String title) {
 
+    public Book(String title) {
+        this.title = title;
     }
 
     public double getPrice() {
@@ -18,7 +20,5 @@ public class Book {
         return title;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+    abstract public void setPrice(double price);
 }

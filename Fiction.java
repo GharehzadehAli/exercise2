@@ -2,13 +2,14 @@ package com.company;
 
 public class Fiction extends Book {
 
-    public Fiction() {
+    public Fiction(String title) {
+        super(title);
         setPrice(24.99);
     }
 
-    @Override
+
     public void setPrice(double price) {
-        super.setPrice(price);
+        super.price = price;
     }
 
 }
